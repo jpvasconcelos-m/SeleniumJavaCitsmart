@@ -40,17 +40,24 @@ public class AutoCitsmart {
         System.setProperty("selenium.server.httpClientFactory", "apache");
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.cesu.pe.gov.br/");
+        /*
         String user = JOptionPane.showInputDialog("Digite o usuario:");
-
         JPasswordField pwd = new JPasswordField(20);
         int action = JOptionPane.showConfirmDialog(null, pwd, "Digite uma senha", JOptionPane.OK_CANCEL_OPTION);
         if (action < 0) JOptionPane.showMessageDialog(null, "Cancel, X or escape key selected");
         String password = new String(pwd.getPassword());
-        
-        WebElement usuario = driver.findElement(By.xpath("//input[@id='user']"));
+        */
+        String user = "joao.mendes@zerohum.com.br";
+        String password = "Joaopedro132@";
+        WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30));
+        //By.xpath("//input[@id='senha']")
+        Thread.sleep(6000);
+        WebElement usuario = wait.until(ExpectedConditions.elementToBeClickable((By.xpath("//input[@id='user']"))));
+
         usuario.sendKeys(user);
 
-        WebElement senha = driver.findElement(By.xpath("//input[@id='senha']"));
+        WebElement senha = wait.until(ExpectedConditions.elementToBeClickable((By.xpath("//input[@id='senha']"))));
+
         senha.sendKeys(password); 
 
         WebElement login = driver.findElement(By.xpath("//button[normalize-space()='Entrar']"));
@@ -58,7 +65,7 @@ public class AutoCitsmart {
         
         
 
-        WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30));
+        
         Thread.sleep(2000);
    
         WebElement pontinhos = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/nav/div/div[2]/ul/li[4]/a/i")));
