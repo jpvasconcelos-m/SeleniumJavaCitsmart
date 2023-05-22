@@ -10,25 +10,31 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.interactions.Actions;
-import javax.swing.JTextArea;
 
 public class AutoCitsmart {
     public static void main(String[] args) throws InterruptedException {
+    	
+    	String user = JOptionPane.showInputDialog("Digite o usuario:");
+        JPasswordField pwd = new JPasswordField(20);
+        int action = JOptionPane.showConfirmDialog(null, pwd, "Digite uma senha", JOptionPane.OK_CANCEL_OPTION);
+        if (action < 0) JOptionPane.showMessageDialog(null, "Cancel, X or escape key selected");
+        String password = new String(pwd.getPassword());
+    	while(user == null) {
+    		System.out.println(user);
+    	}
+    	
+    	
+    	
     	SetorInterface.main(args);
     	while((SetorInterface.setorSelecionado)== null) {
     	System.out.println(SetorInterface.setorSelecionado);
     	Thread.sleep(2000);
     	}
-    	InterfaceTexto.titulo = "Descricão do problema:";
-    	InterfaceTexto.main(args);
-    	while((InterfaceTexto.info)== null) {
-        	Thread.sleep(2000);
-        	System.out.println(InterfaceTexto.info);
-        	}
+
+
+
     	ServicoInterface.main(args);
     	while((ServicoInterface.servicoSelecionado)== null) {
     	System.out.println(ServicoInterface.servicoSelecionado);
@@ -40,15 +46,10 @@ public class AutoCitsmart {
         System.setProperty("selenium.server.httpClientFactory", "apache");
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.cesu.pe.gov.br/");
-        /*
-        String user = JOptionPane.showInputDialog("Digite o usuario:");
-        JPasswordField pwd = new JPasswordField(20);
-        int action = JOptionPane.showConfirmDialog(null, pwd, "Digite uma senha", JOptionPane.OK_CANCEL_OPTION);
-        if (action < 0) JOptionPane.showMessageDialog(null, "Cancel, X or escape key selected");
-        String password = new String(pwd.getPassword());
-        */
-        String user = "joao.mendes@zerohum.com.br";
-        String password = "Joaopedro132@";
+        
+        
+        
+        
         WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30));
         //By.xpath("//input[@id='senha']")
         Thread.sleep(6000);
@@ -155,6 +156,9 @@ public class AutoCitsmart {
         
         WebElement Gravar = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='btnGravar']")));
         //Gravar.click();
+      
+       
+        	
         Thread.sleep(30000);
         driver.switchTo().defaultContent();
         entrada.close();

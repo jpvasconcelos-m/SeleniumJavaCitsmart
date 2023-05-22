@@ -9,8 +9,8 @@ public class InterfaceTexto extends JFrame {
 
 
 	private static final long serialVersionUID = 1L;
-	private JTextArea campoTexto; 
-    public static String titulo = "teste";
+	private final JTextArea campoTexto;
+
     static String info;
 
     public InterfaceTexto(String titulo) {
@@ -43,7 +43,7 @@ public class InterfaceTexto extends JFrame {
         return info;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args, String titulo) {
     	
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {

@@ -57,7 +57,7 @@
             <configuration>
                 <archive>
                     <manifest>
-                        <mainClass>seleniumproject.AutoCitsmart</mainClass>
+                        <mainClass>seleniumproject.AutoCSNovo</mainClass>
                     </manifest>
                 </archive>
                 <descriptorRefs>
@@ -82,7 +82,7 @@
       <configuration>
         <archive>
           <manifest>
-            <mainClass>seleniumproject.AutoCitsmart</mainClass>
+            <mainClass>seleniumproject.AutoCSNovo</mainClass>
           </manifest>
         </archive>
       </configuration>
