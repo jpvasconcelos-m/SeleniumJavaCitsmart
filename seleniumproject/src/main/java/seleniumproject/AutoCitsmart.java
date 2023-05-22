@@ -47,8 +47,8 @@ public class AutoCitsmart {
         if (action < 0) JOptionPane.showMessageDialog(null, "Cancel, X or escape key selected");
         String password = new String(pwd.getPassword());
         */
-        String user = "joao.mendes@zerohum.com.br";
-        String password = "Joaopedro132@";
+        String user = "";
+        String password = "";
         WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30));
         //By.xpath("//input[@id='senha']")
         Thread.sleep(6000);
