@@ -9,7 +9,7 @@ import javax.swing.JComboBox;
 import javax.swing.JFrame;
 
 public class ServicoInterface {
-	private String[] servicoes = Dados.servicos;
+	public String[] servicoes = Dados.servicos;
 
     private JFrame frame;
     private JComboBox<String> dropdown;

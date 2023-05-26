@@ -98,15 +98,18 @@
         <target>13</target> <!-- Define o nível de versão de destino para o código compilado como 13 -->
       </configuration>
     </plugin>
-  
-        
-        
-        
+
+
+
     </plugins>
+
 </build>
 
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
+    </properties>
  
 
 

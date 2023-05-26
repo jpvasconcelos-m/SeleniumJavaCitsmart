@@ -6,12 +6,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class SetorInterface {
-    private String[] setores = Dados.setores;
+    public String[] setores = Dados.setores;
 
-    private JFrame frame;
-    private JComboBox<String> dropdown;
-    private JButton button;
-    static String setorSelecionado;
+    public JFrame frame;
+    public  JComboBox<String> dropdown;
+   public JButton button;
+    public static String setorSelecionado;
 
 
     public SetorInterface() {
@@ -26,7 +26,7 @@ public class SetorInterface {
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                setorSelecionado = (String) dropdown.getSelectedItem();
+                 setorSelecionado = (String) dropdown.getSelectedItem();
                 System.out.println("Setor selecionado: " + setorSelecionado);
                 frame.dispose();
             }

@@ -2,10 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eab46b0f-3730-4fac-b52a-41efb290b810" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../../.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.classpath" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../.settings/org.eclipse.core.resources.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../API_GOOGLE_SHEETS/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../API_GOOGLE_SHEETS/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../API_GOOGLE_SHEETS/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../API_GOOGLE_SHEETS/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ApiGoogleSheets/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ApiGoogleSheets/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SheetsAndJava/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SheetsAndJava/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SheetsAndJava/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SheetsAndJava/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SheetsAndJava/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SheetsAndJava/src/main/resources/client_secret_945821489388-n30p5d4s9s64td56omd11j5plv2npum2.apps.googleusercontent.com.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoginGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RepetirChamado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AutoCitsmart.java" beforeDir="false" afterPath="$PROJECT_DIR$/AutoCitsmart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AutoCSNovo.java" beforeDir="false" afterPath="$PROJECT_DIR$/AutoCSNovo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dados.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dados.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServicoInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/ServicoInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SetorInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/SetorInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,9 +33,22 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
   </component>
   <component name="ProjectId" id="2Q9f5L8hJLVHtB4wJvj78IGKWdI" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/joaop/git/repository/seleniumproject",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -31,5 +61,8 @@
       <updated>1684770533344</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
