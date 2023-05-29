@@ -52,4 +52,19 @@ static String[] servicos = {"SES (HGV) > Arquivo/Pasta > Acesso", "SES (HGV) > A
 		"SES (HGV) > Vistoria/Diagnóstico > Vistoria Técnica"
 
 };
+
+static String[] CausaSolucao = {"ACESSO","....Alteração de Conta","....Alteração de Perfil da Conta","....Bloqueio de Conta","....Configuração de Conta","....Criação de Conta","....Desbloqueio de Conta","....Orientação",
+		"....Outras Solicitações de Acesso",
+		"....Redefinição de Senha",
+		"....Remoção de Conta","HARDWARE","....Desmontagem de Equipamento",
+		"....Instalação de Componente","....Instalação de Equipamento",
+		"....Manutenção Corretiva","....Manutenção Preventiva","....Montagem de Equipamento",
+		"....Remanejamento de Equipamento","....Remoção de Equipamento","....Substituição de Componente",
+		"....Substituição do Equipamento","REDE","....Bloqueio de Porta","....Bloqueio de Site",
+		"....Cabeamento","....Conectorização de Ponto de Dados","....Configuração de Adaptador de Rede",
+		"....Desbloqueio de Porta","....Desbloqueio de Site","....Mapeamento","....Orientação Geral",
+		"....Outras Solicitações de Rede","SOFTWARE","....Ativação","....Configuração",
+		"....Desinstalação","....Instalação","....Outras Solicitações de Software","TELEFONIA",
+		"....Categorização","....Conectorização de Ponto de Voz","....Configuração de Telefone",
+		"....Outros","....Sinal"};
 }

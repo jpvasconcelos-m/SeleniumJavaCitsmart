@@ -12,11 +12,16 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class AutoCSNovo {
+ public static String TextoCausa;
+ public static String TextoSolucao;
+ static WebDriver driver = new ChromeDriver();
+ static WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(100));
+
  public static void main(String[] args) throws InterruptedException {
   RepetirChamado Repetir = new RepetirChamado();
   String k = "";
   LoginGUI.main(args);
-  WebDriver driver = new ChromeDriver();
+
 
   while (LoginGUI.username == null) {
    System.out.println(LoginGUI.username);
@@ -65,7 +70,7 @@ public class AutoCSNovo {
     System.out.println(InterfaceTexto.info);
    }
 
-   String TextoSolucao = InterfaceTexto.info;
+  String TextoSolucao = InterfaceTexto.info;
    InterfaceTexto.info = null;
 
    ServicoInterface.main(args);
@@ -78,7 +83,7 @@ public class AutoCSNovo {
    System.setProperty("selenium.server.httpClientFactory", "apache");
    driver.get("https://www.cesu.pe.gov.br/");
 
-   WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+
    Thread.sleep(4000);
    WebElement usuario = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='user']")));
    usuario.sendKeys(LoginGUI.username);
@@ -134,29 +139,33 @@ public class AutoCSNovo {
    ServicoBusca.click();
 
    WebElement dropdown1 = driver.findElement(By.id("idUnidadeCadastroRapido"));
-   WebElement dropdown2 = driver.findElement(By.id("idStatusCadastroRapido"));
+   //WebElement dropdown2 = driver.findElement(By.id("idStatusCadastroRapido"));
    Select select1 = new Select(dropdown1);
 
-   WebElement Expandir = driver.findElement(By.xpath("//div[@data-collapse-closed='true']//div//span"));
-   Expandir.click();
+   //WebElement Expandir = driver.findElement(By.xpath("//div[@data-collapse-closed='true']//div//span"));
+  //Expandir.click();
 
-   Select select2 = new Select(dropdown2);
+   //Select select2 = new Select(dropdown2);
+
    select1.selectByValue("6660");
-   select2.selectByValue("4");
 
    WebElement CampoDescricao = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//textarea[@id='descricaoCadastroRapido']")));
-   WebElement Causa = wait.until(ExpectedConditions.elementToBeClickable(By.id("detalhamentoCausaCadastroRapido")));
-   WebElement Solucao = wait.until(ExpectedConditions.elementToBeClickable(By.id("respostaCadastroRapido")));
+
+
+ // WebElement Causa = wait.until(ExpectedConditions.elementToBeClickable(By.id("detalhamentoCausaCadastroRapido")));
+//  WebElement Solucao = wait.until(ExpectedConditions.elementToBeClickable(By.id("respostaCadastroRapido")));
 
    CampoDescricao.click();
    CampoDescricao.sendKeys(TextoDescricao);
-
-   Causa.sendKeys(TextoCausa);
-   Solucao.sendKeys(TextoSolucao);
-
    WebElement Gravar = driver.findElement(By.xpath("//a[@onclick='gravarCadastroRapido();']"));
 
+   //Causa.sendKeys(TextoCausa);
+   //Solucao.sendKeys(TextoSolucao);
+
+
+
    Thread.sleep(3000);
+
    InterfaceSimNao.main(args);
 
    while (InterfaceSimNao.resposta.equals("")) {
@@ -167,6 +176,18 @@ public class AutoCSNovo {
 
    if (resposta.equals("Sim")) {
     Gravar.click();
+    Thread.sleep(1000);
+    WebElement Nsolicitacao = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div[id='divInsercao'] h3 b u")));
+    System.out.println(Nsolicitacao.getText());
+    String numero = Nsolicitacao.getText();
+
+
+    driver.quit();
+    String urlCapturar = "https://www.cesu.pe.gov.br/citsmart/jspEmbedded/43871/jsp_302_process.jsp";
+    String urlFechar = "https://www.cesu.pe.gov.br/citsmart/jspEmbedded/43871/jsp_303_process.jsp";
+    CapturarChamados.Capturar(numero,urlCapturar);
+    FecharChamados.Fechar(numero,urlFechar);
+
    } else if (resposta.equals("Não")) {
     driver.quit();
    }
@@ -184,4 +205,6 @@ public class AutoCSNovo {
 
   Thread.sleep(7000);
  }
+
+
 }
