@@ -2,27 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eab46b0f-3730-4fac-b52a-41efb290b810" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../../.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../API_GOOGLE_SHEETS/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../API_GOOGLE_SHEETS/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../API_GOOGLE_SHEETS/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../API_GOOGLE_SHEETS/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ApiGoogleSheets/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ApiGoogleSheets/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SheetsAndJava/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SheetsAndJava/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SheetsAndJava/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SheetsAndJava/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SheetsAndJava/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SheetsAndJava/src/main/resources/client_secret_945821489388-n30p5d4s9s64td56omd11j5plv2npum2.apps.googleusercontent.com.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LoginGUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RepetirChamado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Projeto/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Projeto/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Projeto/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Projeto/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Projeto/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Projeto/settings.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Projeto/src/main/java/projeto/Projeto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AutoCSNovo.java" beforeDir="false" afterPath="$PROJECT_DIR$/AutoCSNovo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dados.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dados.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServicoInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/ServicoInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SetorInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/SetorInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,17 +28,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/joaop/git/repository/seleniumproject",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/joaop/git/repository/seleniumproject&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="seleniumproject" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="seleniumproject" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

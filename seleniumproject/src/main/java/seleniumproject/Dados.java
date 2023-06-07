@@ -1,7 +1,14 @@
 package seleniumproject;
 
+import com.google.common.hash.HashCode;
+import org.apache.commons.lang3.builder.HashCodeBuilder;
+
+import java.util.HashMap;
+
 public class Dados {
-	static String[] setores = {"AGENCIA TRANSFUSIONAL", "AGENCIA TRANSFUSIONAL- BANCO DE SANGUE", "ALMOXARIFADO", 
+
+
+	static String[] setores = {"AGENCIA TRANSFUSIONAL", "AGENCIA TRANSFUSIONAL- BANCO DE SANGUE", "ALMOXARIFADO",
     		"ALMOXARIFADO ATENDIMENTO", "ALMOXARIFADO ATENDIMENTO (GERENCIADOR)", "ALMOXARIFADO GERÊNCIA", 
     		"AMBULATÓRIO ADMISSÃO ELETIVA", "AMBULATÓRIO CLINICA CIRÚRGICA PAINEL", "AMBULATÓRIO CLINICA MÉDICA PAINEL", 
     		"AMBULATÓRIO CLÍNICA CIRÚRGICA CITOSCOPIA", "AMBULATÓRIO CLÍNICA CIRÚRGICA CURATIVO", 
@@ -52,4 +59,9 @@ static String[] servicos = {"SES (HGV) > Arquivo/Pasta > Acesso", "SES (HGV) > A
 		"SES (HGV) > Vistoria/Diagnóstico > Vistoria Técnica"
 
 };
+
+	@Override
+	public int hashCode() {
+		return super.hashCode();
+	}
 }

@@ -153,7 +153,7 @@ public class AutoCSNovo {
 
    Causa.sendKeys(TextoCausa);
    Solucao.sendKeys(TextoSolucao);
-
+//a
    WebElement Gravar = driver.findElement(By.xpath("//a[@onclick='gravarCadastroRapido();']"));
 
    Thread.sleep(3000);
