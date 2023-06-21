@@ -9,8 +9,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
-
-public class FecharChamados {
+@Deprecated
+public class FecharChamados {/*
     static WebDriver driver3 = new ChromeDriver();
     static WebDriverWait wait3 = new WebDriverWait(driver3, Duration.ofSeconds(30));
 
@@ -45,4 +45,5 @@ public class FecharChamados {
         btnFechar.click();
 
     }
+    */
 }

@@ -2,19 +2,19 @@ package seleniumproject;
 
 public class teste {
 
-    public static String encontrar(String string1,String string2){
+    public String encontrar(String string1,String string2){
         if(string1.contains(string2)){
             return string1;
         }
         else return null;
     }
 
-    static boolean  condicaoPadrao1(String servico){
+    public static boolean  condicaoPadrao1(String servico){
 
         return servico.contains("SES (HGV) > Arquivo/Pasta > Acesso")
          || servico.contains("Usuário de Rede/Internet > Criação");
     }
-    static boolean  condicaoPadrao2(String servico){
+    public static boolean  condicaoPadrao2(String servico){
 
         return servico.contains("Arquivo/Pasta > Backup e Recuperação.")
                 || servico.contains("Arquivo/Pasta > Mapeamento")
@@ -93,7 +93,7 @@ public class teste {
     }
 
     public static void main(String[] args) {
-
+        String teste = "Impressora e Digitalização > Reposição";
         for(String servico: Dados.servicos){
             if(condicaoPadrao6(servico))
                 System.out.println(servico);

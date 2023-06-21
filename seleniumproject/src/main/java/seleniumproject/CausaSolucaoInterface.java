@@ -1,11 +1,16 @@
+
+
 package seleniumproject;
 
+import javax.enterprise.context.Dependent;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+@Deprecated
 
 public class CausaSolucaoInterface {
+/*
         public String[] causasolucao = Dados.CausaSolucao;
 
         public JFrame frame;
@@ -48,5 +53,8 @@ public class CausaSolucaoInterface {
             String causa = CausaSolucaoInterface.getCausaSelecionada();
             System.out.println("Setor selecionado: " + causaSelecionada);
         }
+        */
+
     }
+
 

@@ -157,7 +157,7 @@ public class AutoCSNovo {
    WebElement Gravar = driver.findElement(By.xpath("//a[@onclick='gravarCadastroRapido();']"));
 
    Thread.sleep(3000);
-   InterfaceSimNao.main(args);
+   InterfaceSimNao.SimNao("Gravar Chamado?");
 
    while (InterfaceSimNao.resposta.equals("")) {
     System.out.println(InterfaceSimNao.resposta);

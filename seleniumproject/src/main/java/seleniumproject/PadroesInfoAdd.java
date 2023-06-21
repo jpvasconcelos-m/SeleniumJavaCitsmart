@@ -1,6 +1,6 @@
 package seleniumproject;
 
-import java.sql.SQLOutput;
+
 import java.util.HashMap;
 
 public class PadroesInfoAdd {

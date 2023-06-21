@@ -4,26 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f3ebb4d-baa3-437e-80ff-d03a0d222449" name="Changes" comment="quarto commit">
-      <change afterPath="$PROJECT_DIR$/../Projeto/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Projeto/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Projeto/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Projeto/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Projeto/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Projeto/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Projeto/src/main/java/projeto/Projeto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seleniumproject/Observavel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seleniumproject/Padrao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seleniumproject/Padrao1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seleniumproject/Padrao2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seleniumproject/Padrao3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seleniumproject/Padrao4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seleniumproject/PadroesInfoAdd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/seleniumproject/Testador.java" afterDir="false" />
+    <list default="true" id="0f3ebb4d-baa3-437e-80ff-d03a0d222449" name="Changes" comment="quinto commit">
+      <change beforePath="$PROJECT_DIR$/../SeleniumJavaCitsmart" beforeDir="false" afterPath="$PROJECT_DIR$/../SeleniumJavaCitsmart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/seleniumproject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seleniumproject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/seleniumproject/AutoCSNovo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seleniumproject/AutoCSNovo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/seleniumproject/SetorInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seleniumproject/SetorInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seleniumproject/AutoCitsmart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seleniumproject/AutoCitsmart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seleniumproject/CausaSolucaoInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seleniumproject/CausaSolucaoInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seleniumproject/FecharChamados.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seleniumproject/FecharChamados.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seleniumproject/InterfaceSimNao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seleniumproject/InterfaceSimNao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seleniumproject/PadroesInfoAdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seleniumproject/PadroesInfoAdd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seleniumproject/Texto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seleniumproject/Texto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/seleniumproject/teste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seleniumproject/teste.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +64,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
@@ -81,7 +73,7 @@
       <recent name="seleniumproject" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.teste">
+  <component name="RunManager" selected="Application.AutoCitsmart">
     <configuration name="AutoCSNovo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="seleniumproject.AutoCSNovo" />
       <module name="seleniumproject" />
@@ -95,8 +87,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="seleniumproject.Login" />
+    <configuration name="AutoCitsmart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="seleniumproject.AutoCitsmart" />
       <module name="seleniumproject" />
       <extension name="coverage">
         <pattern>
@@ -149,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.teste" />
-        <item itemvalue="Application.StringSearchAndWriteToFile" />
-        <item itemvalue="Application.PadroesInfoAdd" />
+        <item itemvalue="Application.AutoCitsmart" />
         <item itemvalue="Application.AutoCSNovo" />
-        <item itemvalue="Application.Login" />
+        <item itemvalue="Application.teste" />
+        <item itemvalue="Application.PadroesInfoAdd" />
+        <item itemvalue="Application.StringSearchAndWriteToFile" />
       </list>
     </recent_temporary>
   </component>
@@ -187,13 +179,39 @@
       <option name="project" value="LOCAL" />
       <updated>1685113709013</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="quinto commit">
+      <created>1686158068439</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686158068439</updated>
+    </task>
+    <task id="LOCAL-00005" summary="quinto commit">
+      <created>1686158096973</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686158096973</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Terceiro Commit" />
     <MESSAGE value="quarto commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="quarto commit" />
+    <MESSAGE value="quinto commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="quinto commit" />
   </component>
 </project>

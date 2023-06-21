@@ -9,8 +9,8 @@ import java.awt.event.ActionListener;
 public class InterfaceSimNao {
     public static String resposta = ""; // Variável resposta como atributo estático da classe
 
-    public static void main(String[] args) {
-        JFrame frame = new JFrame("Gravar chamado?");
+    public static void SimNao(String YesNo) {
+        JFrame frame = new JFrame(YesNo);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(300, 100);
         frame.setLayout(new FlowLayout());

@@ -7,9 +7,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-import static seleniumproject.AutoCSNovo.driver;
+
 
 public class Texto {
+    /*
     String Texto;
     String Xpath;
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
@@ -24,5 +25,5 @@ public class Texto {
 
 
     }
-
+*/
 }
