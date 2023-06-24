@@ -53,69 +53,69 @@ public class AutoCitsmart {
         if (ServicoInterface.servicoSelecionado.contains("SES (HGV) > Arquivo/Pasta > Acesso") || ServicoInterface.servicoSelecionado.contains("Usuário de Rede/Internet > Criação")){
             padrao = 1;
         } else if (ServicoInterface.servicoSelecionado.contains("SES (HGV) > Arquivo/Pasta > Backup e Recuperação")
-                || ServicoInterface.servicoSelecionado.contains("Arquivo/Pasta > Mapeamento")
-                || ServicoInterface.servicoSelecionado.contains("Estação de trabalho > Configuração")
-                || ServicoInterface.servicoSelecionado.contains("Estação de trabalho > Instalação")
-                || ServicoInterface.servicoSelecionado.contains("Projetor e Perifericos > Configuração")
-                || ServicoInterface.servicoSelecionado.contains("Projetor e Perifericos > Remanejamento")
-                || ServicoInterface.servicoSelecionado.contains("Sistemas Operacional > Atualização")
-                || ServicoInterface.servicoSelecionado.contains("Sistemas Operacional > Ativação de Licença")
-                || ServicoInterface.servicoSelecionado.contains("Softwares e Aplicativos > Ativação de Licença")
-                || ServicoInterface.servicoSelecionado.contains("Softwares e Aplicativos > Configuração")
-                || ServicoInterface.servicoSelecionado.contains("Softwares e Aplicativos > Instalação/Desinstalação/Atualização")
-                || ServicoInterface.servicoSelecionado.contains("Usuário de Rede/Internet > Bloqueio/Desbloqueio")
-                || ServicoInterface.servicoSelecionado.contains("Usuário de Rede/Internet > Configuração")
-                || ServicoInterface.servicoSelecionado.contains("Usuário de Rede/Internet > Liberação de Acesso Proxy")
-                || ServicoInterface.servicoSelecionado.contains("Usuário de Rede/Internet > Liberação de Acesso Wi-Fi")
-                || ServicoInterface.servicoSelecionado.contains("Usuário de Rede/Internet > Senha")) {
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Arquivo/Pasta > Mapeamento")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Estação de Trabalho > Configuração")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Estação de trabalho > Instalação")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Projetor e Perifericos > Configuração")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Projetor e Perifericos > Remanejamento")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Sistemas Operacional > Atualização")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Sistemas Operacional > Ativação de Licença")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Softwares e Aplicativos > Ativação de Licença")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Softwares e Aplicativos > Configuração")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Softwares e Aplicativos > Instalação/Desinstalação/Atualização")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Usuário de Rede/Internet > Bloqueio/Desbloqueio")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Usuário de Rede/Internet > Configuração")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Usuário de Rede/Internet > Liberação de Acesso Proxy")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Usuário de Rede/Internet > Liberação de Acesso Wi-Fi")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Usuário de Rede/Internet > Senha")) {
             padrao=2;
-        } else if (ServicoInterface.servicoSelecionado.contains("Ativos de Rede > Configuração Física")
-                || ServicoInterface.servicoSelecionado.contains("Dúvidas do Sistema, Regmed")
-                || ServicoInterface.servicoSelecionado.contains("Estação de Trabalho > Empréstimo de Equipamento (DPZ)")
-                || ServicoInterface.servicoSelecionado.contains("Sistemas Operacional > Configuração")
-                || ServicoInterface.servicoSelecionado.contains("Estação de Trabalho > Intervenção Técnica")
-                || ServicoInterface.servicoSelecionado.contains("Estação de Trabalho > Intervenção Técnica ( Troca de peça)")
-                || ServicoInterface.servicoSelecionado.contains("Estação de Trabalho > Manutenção preventiva")
-                || ServicoInterface.servicoSelecionado.contains("Estação de Trabalho > Remanejamento")
-                || ServicoInterface.servicoSelecionado.contains("Estação de Trabalho > Substituição")
-                || ServicoInterface.servicoSelecionado.contains("FormaSUS/RHOSE/SISGRADE/SISCAD/SISCADADISP/SISCON > Bug/Erro/Falha")
-                || ServicoInterface.servicoSelecionado.contains("FormaSUS/RHOSE/SISGRADE/SISCAD/SISCADADISP/SISCON > Dúvidas e Orientações")
-                || ServicoInterface.servicoSelecionado.contains("Impressora e Digitalização > Intervenção Técnica")
-                || ServicoInterface.servicoSelecionado.contains("Impressora e Digitalização > Intervenção técnica(troca de peça)")
-                || ServicoInterface.servicoSelecionado.contains("Impressora e Digitalização > Manutenção Preventiva")
-                || ServicoInterface.servicoSelecionado.contains("Impressora e Digitalização > Substituição")
-                || ServicoInterface.servicoSelecionado.contains("Indefinido >")
-                || ServicoInterface.servicoSelecionado.contains("Internet/Rede > Ativação")
-                || ServicoInterface.servicoSelecionado.contains("Internet/Rede > Instalação de Ponto de Rede")
-                || ServicoInterface.servicoSelecionado.contains("Mãe Coruja > Dúvidas e Orientações")
-                || ServicoInterface.servicoSelecionado.contains("Outros Sistemas > Dúvidas e Orientações")
-                || ServicoInterface.servicoSelecionado.contains("Papel de Parede > Alteração")
-                || ServicoInterface.servicoSelecionado.contains("Projetor e Perifericos > Instalação")
-                || ServicoInterface.servicoSelecionado.contains("Projetor e Perifericos > Substituição")
-                || ServicoInterface.servicoSelecionado.contains("SAPE >")
-                || ServicoInterface.servicoSelecionado.contains("SEI/SIGEPE >")
-                || ServicoInterface.servicoSelecionado.contains("SICREF/SISCONF/SCON >")
-                || ServicoInterface.servicoSelecionado.contains("SIGAPE >")
-                || ServicoInterface.servicoSelecionado.contains("SIM/SINAN/SINASC/CIEVS >")
-                || ServicoInterface.servicoSelecionado.contains("Sistemas - Gerenciador de impressão >")
-                || ServicoInterface.servicoSelecionado.contains("Sistemas Ministério da Saúde >")
-                || ServicoInterface.servicoSelecionado.contains("Sistemas Operacional > Instalação")
-                || ServicoInterface.servicoSelecionado.contains("Sistemas Operacional > Manutenção Preventiva")
-                || ServicoInterface.servicoSelecionado.contains("Sistemas de BI >")
-                || ServicoInterface.servicoSelecionado.contains("Telefonia >")
-                || ServicoInterface.servicoSelecionado.contains("Usuário de E-mail >")
-                || ServicoInterface.servicoSelecionado.contains("Vistoria/Diagnóstico >")) {
+        } else if (ServicoInterface.servicoSelecionado.contains("SES (HGV) > Ativos de Rede > Configuração Física")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Dúvidas do Sistema, Regmed")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Estação de Trabalho > Empréstimo de Equipamento (DPZ)")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Sistemas Operacional > Configuração")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Estação de Trabalho > Intervenção Técnica")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Estação de Trabalho > Intervenção Técnica ( Troca de peça)")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Estação de Trabalho > Manutenção preventiva")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Estação de Trabalho > Remanejamento")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Estação de Trabalho > Substituição")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > FormaSUS/RHOSE/SISGRADE/SISCAD/SISCADADISP/SISCON > Bug/Erro/Falha")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > FormaSUS/RHOSE/SISGRADE/SISCAD/SISCADADISP/SISCON > Dúvidas e Orientações")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Impressora e Digitalização > Intervenção Técnica")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Impressora e Digitalização > Intervenção técnica(troca de peça)")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Impressora e Digitalização > Manutenção Preventiva")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Impressora e Digitalização > Substituição")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Indefinido >")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Internet/Rede > Ativação")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Internet/Rede > Instalação de Ponto de Rede")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Mãe Coruja > Dúvidas e Orientações")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Outros Sistemas > Dúvidas e Orientações")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Papel de Parede > Alteração")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Projetor e Perifericos > Instalação")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Projetor e Perifericos > Substituição")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > SAPE >")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > SEI/SIGEPE >")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > SICREF/SISCONF/SCON >")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > SIGAPE >")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > SIM/SINAN/SINASC/CIEVS >")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Sistemas - Gerenciador de impressão >")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Sistemas Ministério da Saúde >")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Sistemas Operacional > Instalação")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Sistemas Operacional > Manutenção Preventiva")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Sistemas de BI >")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Telefonia >")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Usuário de E-mail >")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Vistoria/Diagnóstico >")) {
             padrao = 3;
-        } else if (ServicoInterface.servicoSelecionado.contains("CITSmart ITSM > Cadastro de Usuário")) {
+        } else if (ServicoInterface.servicoSelecionado.contains("SES (HGV) > CITSmart ITSM > Cadastro de Usuário")) {
             padrao = 4;
 
-        } else if (ServicoInterface.servicoSelecionado.contains("Impressora e Digitalização > Aquisição de Suprimentos")
-                || ServicoInterface.servicoSelecionado.contains("Impressora e Digitalização > Configuração")
-                || ServicoInterface.servicoSelecionado.contains("Impressora e Digitalização > Instalação")
-                || ServicoInterface.servicoSelecionado.contains("Impressora e Digitalização > Remanejamento")
-                || ServicoInterface.servicoSelecionado.contains("Impressora e Digitalização > Reposição")) {
+        } else if (ServicoInterface.servicoSelecionado.contains("SES (HGV) > Impressora e Digitalização > Aquisição de Suprimentos")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Impressora e Digitalização > Configuração")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Impressora e Digitalização > Instalação")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Impressora e Digitalização > Remanejamento")
+                || ServicoInterface.servicoSelecionado.contains("SES (HGV) > Impressora e Digitalização > Reposição")) {
             padrao = 5;
-        } else if (ServicoInterface.servicoSelecionado.contains("Sistema MV/SoulMV >")) {
+        } else if (ServicoInterface.servicoSelecionado.contains("SES (HGV) > Sistema MV/SoulMV >")) {
             padrao = 6;
 
         }
@@ -259,12 +259,8 @@ Funcionando(s/n)= campoDyn_3524
             }
         }
         if(padrao == 2){
-            while(Etiqueta == null) {
-                Etiqueta = entrada.nextLine();
-                WebElement CampoEtiquetaCesu = driver.findElement(By.id("campoDyn_3520"));
-                CampoEtiquetaCesu.click();
-                CampoEtiquetaCesu.sendKeys(Etiqueta);
 
+                WebElement CampoEtiquetaCesu = driver.findElement(By.id("campoDyn_3520"));
                 WebElement CampoSetor = wait.until(ExpectedConditions.elementToBeClickable(By.id("campoDyn_3522")));
                 CampoSetor.click();
                 String Setor = SetorInterface.setorSelecionado;
@@ -272,23 +268,40 @@ Funcionando(s/n)= campoDyn_3524
 
                 WebElement CampoRamal = wait.until(ExpectedConditions.elementToBeClickable(By.id("campoDyn_3523")));
                 CampoRamal.click();
-                String Ramal = "845842";
-                CampoRamal.sendKeys(Ramal);
+                InterfaceTexto.info = null;
+                InterfaceTexto.main(args, "Ramal: ");
+                while(InterfaceTexto.info == null){
+                    Thread.sleep(2000);
+                    System.out.println(InterfaceTexto.info);
+                }
+                CampoRamal.sendKeys(InterfaceTexto.info);
+
+                InterfaceTexto.main(args, "Etiqueta: ");
+                InterfaceTexto.info = null;
+                while (InterfaceTexto.info == null) {
+                    Thread.sleep(2000);
+                    System.out.println(InterfaceTexto.info);
+                }
+                CampoEtiquetaCesu.sendKeys(InterfaceTexto.info);
+
                 WebElement UnidadeDropdown = driver.findElement(By.id("campoDyn_3521"));
                 WebElement ExpandirUnidade =  driver.findElement(By.xpath("/html[1]/body[1]/form[1]/div[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/table[1]/tbody[1]/tr[2]/td[2]/div[1]/select[1]"));
                 ExpandirUnidade.click();
                 Select select = new Select(UnidadeDropdown);
                 select.selectByValue("870");
 
-                InterfaceSimNao.SimNao("Funcionando?");
+                InterfaceSimNao.SimNao("Equip. está funcionando?");
 
                 while (InterfaceSimNao.resposta.equals("")) {
                     System.out.println(InterfaceSimNao.resposta);
+                    Thread.sleep(2000);
                 }
 
                 String resposta = InterfaceSimNao.resposta;
-                WebElement Funcionando = driver.findElement(By.cssSelector("body > form:nth-child(5) > div:nth-child(16) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) > div:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(5) > td:nth-child(2) > div:nth-child(1) > input:nth-child(1)"));
-                WebElement NaoFuncionando = driver.findElement(By.cssSelector("body > form:nth-child(5) > div:nth-child(16) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) > div:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(5) > td:nth-child(2) > div:nth-child(1) > input:nth-child(3)"));
+                WebElement Funcionando = driver.findElement(By.xpath(
+                        "/html[1]/body[1]/form[1]/div[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/table[1]/tbody[1]/tr[5]/td[2]/div[1]/input[1]"));
+                WebElement NaoFuncionando = driver.findElement(By.xpath(
+                        "/html[1]/body[1]/form[1]/div[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/table[1]/tbody[1]/tr[5]/td[2]/div[1]/input[2]"));
                 if (resposta.equals("Sim")) {
                     Funcionando.click();
                 } else if (resposta.equals("Não")) {
@@ -322,4 +335,4 @@ Funcionando(s/n)= campoDyn_3524
 
         driver.quit(); // Fechar o navegador.
     }
-}}
+}
