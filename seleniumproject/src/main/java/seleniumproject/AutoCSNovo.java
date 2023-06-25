@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
-
+/*
 public class AutoCSNovo {
  public static void main(String[] args) throws InterruptedException {
   RepetirChamado Repetir = new RepetirChamado();
@@ -184,4 +184,5 @@ public class AutoCSNovo {
 
   Thread.sleep(7000);
  }
-}
+
+}*/

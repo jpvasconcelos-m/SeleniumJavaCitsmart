@@ -14,7 +14,7 @@ class LoginGUI extends JFrame {
     public LoginGUI() {
         setTitle("Login");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(300, 200);
+        setSize(450, 200);
         setLocationRelativeTo(null);
 
         JPanel panel = new JPanel();
