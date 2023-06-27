@@ -5,7 +5,17 @@
   <version>0.0.1-SNAPSHOT</version>
   
   <dependencies>
-  
+
+      <dependency>
+          <groupId>org.openjfx</groupId>
+          <artifactId>javafx-controls</artifactId>
+          <version>13.0.2</version>
+      </dependency>
+      <dependency>
+          <groupId>org.openjfx</groupId>
+          <artifactId>javafx-fxml</artifactId>
+          <version>13.0.2</version>
+      </dependency>
  
  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
@@ -46,8 +56,14 @@
 
  
   </dependencies>
-  
-  <build>
+
+
+
+
+
+
+
+    <build>
     <plugins>
        
    
@@ -57,7 +73,7 @@
             <configuration>
                 <archive>
                     <manifest>
-                        <mainClass>seleniumproject.AutoCSNovo</mainClass>
+                        <mainClass>seleniumproject.AutoCitsmart</mainClass>
                     </manifest>
                 </archive>
                 <descriptorRefs>
@@ -82,7 +98,7 @@
       <configuration>
         <archive>
           <manifest>
-            <mainClass>seleniumproject.AutoCSNovo</mainClass>
+            <mainClass>seleniumproject.AutoCitsmart</mainClass>
           </manifest>
         </archive>
       </configuration>

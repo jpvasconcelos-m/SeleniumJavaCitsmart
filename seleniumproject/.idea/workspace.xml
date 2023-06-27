@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f3ebb4d-baa3-437e-80ff-d03a0d222449" name="Changes" comment="sexto commit">
+    <list default="true" id="0f3ebb4d-baa3-437e-80ff-d03a0d222449" name="Changes" comment="oitavo commit">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/maven_wrapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/seleniumproject/LoginInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SeleniumJavaCitsmart" beforeDir="false" afterPath="$PROJECT_DIR$/../SeleniumJavaCitsmart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/seleniumproject/AutoCSNovo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seleniumproject/AutoCSNovo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/seleniumproject/AutoCitsmart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seleniumproject/AutoCitsmart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/seleniumproject/LoginGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seleniumproject/LoginGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/seleniumproject/Observavel.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +37,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/../../../../../Program Files/Java/jdk-13.0.2/lib/src.zip!/java.base/java/lang/IllegalArgumentException.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/../../../../../Program Files/Java/jdk-13.0.2/lib/src.zip!/java.base/java/lang/NullPointerException.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MavenImportPreferences">
@@ -44,30 +47,42 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectId" id="2Q9f0VHEgR6XAqKQ1l1YrUcRgEb" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/joaop/git/repository/seleniumproject&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "13",
+    "last_opened_file_path": "D:/Downloads (Disco de Armazenamento)/openjfx-13.0.2_windows-x64_bin-sdk/javafx-sdk-13.0.2/lib",
+    "project.structure.last.edited": "Global Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="seleniumproject" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="seleniumproject" />
     </key>
@@ -76,6 +91,7 @@
     <configuration name="AutoCitsmart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="seleniumproject.AutoCitsmart" />
       <module name="seleniumproject" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;D:\Downloads (Disco de Armazenamento)\openjfx-13.0.2_windows-x64_bin-sdk\javafx-sdk-13.0.2\lib&quot; --add-modules=javafx.controls,javafx.fxml" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="seleniumproject.*" />
@@ -93,9 +109,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringSearchAndWriteToFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="seleniumproject.StringSearchAndWriteToFile" />
+    <configuration name="LoginInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LoginInterface" />
       <module name="seleniumproject" />
+      <option name="PROGRAM_PARAMETERS" value="-XstartOnFirstThread" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;D:\Downloads (Disco de Armazenamento)\openjfx-13.0.2_windows-x64_bin-sdk\javafx-sdk-13.0.2\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="seleniumproject.*" />
@@ -119,9 +137,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="teste" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="seleniumproject.teste" />
+    <configuration name="seleniumproject.LoginInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="seleniumproject.LoginInterface" />
       <module name="seleniumproject" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;D:\Downloads (Disco de Armazenamento)\openjfx-13.0.2_windows-x64_bin-sdk\javafx-sdk-13.0.2\lib&quot; --add-modules=javafx.controls,javafx.fxml" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="seleniumproject.*" />
@@ -132,13 +151,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.seleniumproject.LoginInterface" />
+      <item itemvalue="Application.AutoCitsmart" />
+      <item itemvalue="Application.LoginGUI" />
+      <item itemvalue="Application.LoginInterface" />
+      <item itemvalue="Application.seleniumproject.LoginGUI" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.AutoCitsmart" />
+        <item itemvalue="Application.seleniumproject.LoginInterface" />
         <item itemvalue="Application.seleniumproject.LoginGUI" />
+        <item itemvalue="Application.LoginInterface" />
         <item itemvalue="Application.LoginGUI" />
-        <item itemvalue="Application.teste" />
-        <item itemvalue="Application.StringSearchAndWriteToFile" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687378012774</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="oitavo commit">
+      <created>1687717491483</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1687717491483</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -213,6 +246,17 @@
     <MESSAGE value="quarto commit" />
     <MESSAGE value="quinto commit" />
     <MESSAGE value="sexto commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="sexto commit" />
+    <MESSAGE value="oitavo commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="oitavo commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.RuntimeException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

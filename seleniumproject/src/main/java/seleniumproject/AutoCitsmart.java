@@ -5,6 +5,8 @@ import java.util.Scanner;
 import javax.swing.JOptionPane;
 import javax.swing.JPasswordField;
 
+import javafx.application.Application;
+import javafx.stage.Stage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -14,12 +16,15 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class AutoCitsmart {
+public class AutoCitsmart   {
     public static void main(String[] args) throws InterruptedException {
+
+
+
         String password = null;
 
-        String user = JOptionPane.showInputDialog("Digite o usuário:");
-        if (user == null) {
+        String username = JOptionPane.showInputDialog("Digite o usuário:");
+        if (username == null) {
             JOptionPane.showMessageDialog(null, "Operação cancelada");
             return;
         } else {
@@ -29,8 +34,8 @@ public class AutoCitsmart {
             if (action == JOptionPane.OK_OPTION) {
                 password = new String(pwd.getPassword());
 
-                while (user == null) {
-                    System.out.println(user);
+                while (username == null) {
+                    System.out.println(username);
                 }
             } else {
                 JOptionPane.showMessageDialog(null, "Operação cancelada");
@@ -40,10 +45,15 @@ public class AutoCitsmart {
 
 
 
+
         SetorInterface.main(args);
         while ((SetorInterface.setorSelecionado) == null) {
             System.out.println(SetorInterface.setorSelecionado);
-            Thread.sleep(2000);
+            try {
+                Thread.sleep(3000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            };
         }
 
         int padrao = 0;
@@ -51,14 +61,22 @@ public class AutoCitsmart {
         ServicoInterface.main(args);
         while ((ServicoInterface.servicoSelecionado) == null) {
             System.out.println(ServicoInterface.servicoSelecionado);
+            try {
             Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
 
 
         }
         InterfaceTexto.main(args, "Descricão do problema:");
 
         while (InterfaceTexto.info == null) {
-            Thread.sleep(2000);
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
             System.out.println(InterfaceTexto.info);
         }
         String TextoDescricao = InterfaceTexto.info;
@@ -143,10 +161,14 @@ public class AutoCitsmart {
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         //By.xpath("//input[@id='senha']")
-        Thread.sleep(6000);
+        try {
+                Thread.sleep(6000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
         WebElement usuario = wait.until(ExpectedConditions.elementToBeClickable((By.xpath("//input[@id='user']"))));
 
-        usuario.sendKeys(user);
+        usuario.sendKeys(username);
 
         WebElement senha = wait.until(ExpectedConditions.elementToBeClickable((By.xpath("//input[@id='senha']"))));
 
@@ -156,7 +178,11 @@ public class AutoCitsmart {
         login.click();
 
 
-        Thread.sleep(2000);
+        try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            };
 
         WebElement pontinhos = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/nav/div/div[2]/ul/li[4]/a/i")));
         pontinhos.click();
@@ -178,19 +204,33 @@ public class AutoCitsmart {
         driver.switchTo().frame(iframe);
         String Contrato = "ses";
         WebElement ContratoDrop = wait.until(ExpectedConditions.elementToBeClickable(By.id("idContrato")));
+        try {
         Thread.sleep(3000);
+    } catch (InterruptedException e) {
+        throw new RuntimeException(e);
+    };
+        ;
         ContratoDrop.click();
         ContratoDrop.sendKeys(Contrato);
         WebElement Tab2 = driver.findElement(By.id("tab2"));
         Tab2.click();
+        try {
         Thread.sleep(3000);
+    } catch (InterruptedException e) {
+        throw new RuntimeException(e);
+    };
+        ;
         WebElement CampoSolicitante = wait.until(ExpectedConditions.elementToBeClickable(By.id("solicitante")));
 
         InterfaceSimNao.SimNao("Você é da TI? ");
 
         while (InterfaceSimNao.resposta.equals("")) {
             System.out.println(InterfaceSimNao.resposta);
-            Thread.sleep(2000);
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
         }
 
         String respostainfor = InterfaceSimNao.resposta;
@@ -201,7 +241,7 @@ public class AutoCitsmart {
             PesqAvancada.click();
             WebElement EmailAvancada = wait.until(ExpectedConditions.elementToBeClickable(By.id("pesqLockupLOOKUP_SOLICITANTE_EMAIL")));
             EmailAvancada.click();
-            EmailAvancada.sendKeys(user);
+            EmailAvancada.sendKeys(username);
             WebElement Pesquisar = driver.findElement(By.xpath("//div[@id='divIntLOOKUP_SOLICITANTE']//div//input[@id='btnPesquisar']"));
             Pesquisar.click();
 
@@ -209,22 +249,51 @@ public class AutoCitsmart {
             WebElement Solicitante = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html[1]/body[1]/div[45]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/table[1]/tbody[1]/tr[2]/td[1]/input[1]")));
             Solicitante.click();
             CampoSolicitante.click();
+            try {
             Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        };
+            ;
             CampoSolicitante.sendKeys(Keys.DOWN);
-            Thread.sleep(3000);
+            try {
+                Thread.sleep(3000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            };
             CampoSolicitante.sendKeys(Keys.ENTER);
-            Thread.sleep(3000);
+            try {
+                Thread.sleep(3000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            };
             CampoSolicitante.click();
-            Thread.sleep(2000);
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
         }
         if (respostainfor.equals("Sim")){
             CampoSolicitante.click();
             CampoSolicitante.sendKeys(SetorInterface.setorSelecionado);
-            Thread.sleep(3000);
+            try {
+                Thread.sleep(3000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            };
             CampoSolicitante.sendKeys(Keys.DOWN);
-            Thread.sleep(3000);
+            try {
+                Thread.sleep(3000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            };
             CampoSolicitante.sendKeys(Keys.ENTER);
-            Thread.sleep(3000);
+            try {
+                Thread.sleep(3000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            };
             CampoSolicitante.click();
             Thread.sleep(2000);
             WebElement CampoEmail = wait.until(ExpectedConditions.elementToBeClickable(By.id("emailcontato")));
@@ -242,11 +311,23 @@ public class AutoCitsmart {
         String Servico = ServicoInterface.servicoSelecionado;
         ServicoBusca.click();
         ServicoBusca.sendKeys(Servico);
-        Thread.sleep(3000);
+        try {
+                Thread.sleep(3000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            };
         ServicoBusca.sendKeys(Keys.DOWN);
-        Thread.sleep(3000);
+        try {
+                Thread.sleep(3000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            };
         ServicoBusca.sendKeys(Keys.ENTER);
-        Thread.sleep(3000);
+        try {
+                Thread.sleep(3000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            };
         ServicoBusca.click();
         WebElement CampoDescricao = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='fieldDescricao']//div[@class='controls']//div[@class='controls']//iframe[@class='wysihtml5-sandbox']")));
         CampoDescricao.click();
@@ -422,7 +503,7 @@ Funcionando(s/n)= campoDyn_3524
             WebElement Unidade = driver.findElement(By.id("campoDyn_3699"));
             Unidade.sendKeys("HGV");
 
-
+            InterfaceSimNao.resposta = "";
             InterfaceSimNao.SimNao("Equip. está funcionando?");
 
             while (InterfaceSimNao.resposta.equals("")) {
@@ -471,8 +552,23 @@ Funcionando(s/n)= campoDyn_3524
 
             driver.switchTo().parentFrame();
 
-            WebElement Gravar = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='btnGravar']")));
-            //Gravar.click();
+        WebElement Gravar = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='btnGravar']")));
+
+        InterfaceSimNao.resposta = "";
+        InterfaceSimNao.SimNao("Criar Chamado?");
+
+        while (InterfaceSimNao.resposta.equals("")) {
+            System.out.println(InterfaceSimNao.resposta);
+            Thread.sleep(1500);
+        }
+
+        String resposta = InterfaceSimNao.resposta;
+
+        if (resposta.equals("Sim")) {
+            Gravar.click();
+        } else if (resposta.equals("Não")) {
+            driver.quit();
+        }
 
 
             Thread.sleep(30000);
