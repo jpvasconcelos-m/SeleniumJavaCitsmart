@@ -16,8 +16,9 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class AutoCitsmart   {
-    static WebDriver driver = new ChromeDriver();
+public class AutoCSUser   {
+   WebDriver driver = new ChromeDriver();
+
     public static void main(String[] args) throws InterruptedException {
 
 
@@ -63,10 +64,10 @@ public class AutoCitsmart   {
         while ((ServicoInterface.servicoSelecionado) == null) {
             System.out.println(ServicoInterface.servicoSelecionado);
             try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
 
 
         }
@@ -156,17 +157,17 @@ public class AutoCitsmart   {
 
         Scanner entrada = new Scanner(System.in);
         System.setProperty("selenium.server.httpClientFactory", "apache");
-
+        WebDriver driver = new ChromeDriver();
         driver.get("https://www.cesu.pe.gov.br/");
-        System.out.println(AutoCitsmart.getDriver());
+
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         //By.xpath("//input[@id='senha']")
         try {
-                Thread.sleep(6000);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
+            Thread.sleep(6000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         WebElement usuario = wait.until(ExpectedConditions.elementToBeClickable((By.xpath("//input[@id='user']"))));
 
         usuario.sendKeys(username);
@@ -180,13 +181,12 @@ public class AutoCitsmart   {
 
 
         try {
-                Thread.sleep(2000);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            };
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        };
 
-        WebElement pontinhos = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-                "/html/body/nav/div/div[2]/ul/li[4]/a/i")));
+        WebElement pontinhos = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/nav/div/div[2]/ul/li[4]/a/i")));
         pontinhos.click();
 
         WebElement AcessarSistema = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"navbar\"]/ul/li[4]/ul/li[4]/a")));
@@ -207,36 +207,22 @@ public class AutoCitsmart   {
         String Contrato = "ses";
         WebElement ContratoDrop = wait.until(ExpectedConditions.elementToBeClickable(By.id("idContrato")));
         try {
-        Thread.sleep(3000);
-    } catch (InterruptedException e) {
-        throw new RuntimeException(e);
-    };
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        };
         ;
         ContratoDrop.click();
         ContratoDrop.sendKeys(Contrato);
         WebElement Tab2 = driver.findElement(By.id("tab2"));
         Tab2.click();
         try {
-        Thread.sleep(3000);
-    } catch (InterruptedException e) {
-        throw new RuntimeException(e);
-    };
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        };
         ;
         WebElement CampoSolicitante = wait.until(ExpectedConditions.elementToBeClickable(By.id("solicitante")));
-
-        InterfaceSimNao.SimNao("Você é da TI? ");
-
-        while (InterfaceSimNao.resposta.equals("")) {
-            System.out.println(InterfaceSimNao.resposta);
-            try {
-                Thread.sleep(2000);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-        }
-
-        String respostainfor = InterfaceSimNao.resposta;
-        if (respostainfor.equals("Não")) {
 
 
             WebElement PesqAvancada = wait.until(ExpectedConditions.elementToBeClickable(By.id("btnPesqAvancada")));
@@ -252,10 +238,10 @@ public class AutoCitsmart   {
             Solicitante.click();
             CampoSolicitante.click();
             try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        };
+                Thread.sleep(3000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            };
             ;
             CampoSolicitante.sendKeys(Keys.DOWN);
             try {
@@ -275,35 +261,8 @@ public class AutoCitsmart   {
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-        }
-        if (respostainfor.equals("Sim")){
-            CampoSolicitante.click();
-            CampoSolicitante.sendKeys(SetorInterface.setorSelecionado);
-            try {
-                Thread.sleep(3000);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            };
-            CampoSolicitante.sendKeys(Keys.DOWN);
-            try {
-                Thread.sleep(3000);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            };
-            CampoSolicitante.sendKeys(Keys.ENTER);
-            try {
-                Thread.sleep(3000);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            };
-            CampoSolicitante.click();
-            Thread.sleep(2000);
-            WebElement CampoEmail = wait.until(ExpectedConditions.elementToBeClickable(By.id("emailcontato")));
-            CampoEmail.click();
-            String Email = "setores_hgv@pronte-pe.com.br";
-            CampoEmail.clear();
-            CampoEmail.sendKeys(Email);
-        }
+
+
 
 
         WebElement Tab3 = driver.findElement(By.id("tab3"));
@@ -314,22 +273,22 @@ public class AutoCitsmart   {
         ServicoBusca.click();
         ServicoBusca.sendKeys(Servico);
         try {
-                Thread.sleep(3000);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            };
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        };
         ServicoBusca.sendKeys(Keys.DOWN);
         try {
-                Thread.sleep(3000);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            };
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        };
         ServicoBusca.sendKeys(Keys.ENTER);
         try {
-                Thread.sleep(3000);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            };
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        };
         ServicoBusca.click();
         WebElement CampoDescricao = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='fieldDescricao']//div[@class='controls']//div[@class='controls']//iframe[@class='wysihtml5-sandbox']")));
         CampoDescricao.click();
@@ -361,34 +320,34 @@ Funcionando(s/n)= campoDyn_3524
             System.out.println("Etiqueta: ");
 
 
-                WebElement CampoEtiquetaCesu = driver.findElement(By.id("campoDyn_3526"));
-                InterfaceTexto.main(args, "Etiqueta: ");
-                InterfaceTexto.info = null;
-                while (InterfaceTexto.info == null) {
-                    Thread.sleep(2000);
-                    System.out.println(InterfaceTexto.info);
-                }
-                CampoEtiquetaCesu.sendKeys(InterfaceTexto.info);
-
-
-                WebElement CampoSetor = wait.until(ExpectedConditions.elementToBeClickable(By.id("campoDyn_3528")));
-                CampoSetor.click();
-                String Setor = SetorInterface.setorSelecionado;
-                CampoSetor.sendKeys(Setor);
-
-                WebElement CampoRamal = wait.until(ExpectedConditions.elementToBeClickable(By.id("campoDyn_3529")));
-                CampoRamal.click();
-                String Ramal = "845842";
-                CampoRamal.sendKeys(Ramal);
-                WebElement UnidadeDropdown = driver.findElement(By.id("campoDyn_3527"));
-                WebElement ExpandirUnidade = driver.findElement(By.xpath("/html[1]/body[1]/form[1]/div[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/table[1]/tbody[1]/tr[3]/td[2]/div[1]/select[1]"));
-                ExpandirUnidade.click();
-                Select select = new Select(UnidadeDropdown);
-                select.selectByValue("880");
-                CampoRamal.click();
-                //WebElement Funcionando = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//input[@id='campoDyn_3702'])[1]")));
-                //Funcionando.click();
+            WebElement CampoEtiquetaCesu = driver.findElement(By.id("campoDyn_3526"));
+            InterfaceTexto.main(args, "Etiqueta: ");
+            InterfaceTexto.info = null;
+            while (InterfaceTexto.info == null) {
                 Thread.sleep(2000);
+                System.out.println(InterfaceTexto.info);
+            }
+            CampoEtiquetaCesu.sendKeys(InterfaceTexto.info);
+
+
+            WebElement CampoSetor = wait.until(ExpectedConditions.elementToBeClickable(By.id("campoDyn_3528")));
+            CampoSetor.click();
+            String Setor = SetorInterface.setorSelecionado;
+            CampoSetor.sendKeys(Setor);
+
+            WebElement CampoRamal = wait.until(ExpectedConditions.elementToBeClickable(By.id("campoDyn_3529")));
+            CampoRamal.click();
+            String Ramal = "845842";
+            CampoRamal.sendKeys(Ramal);
+            WebElement UnidadeDropdown = driver.findElement(By.id("campoDyn_3527"));
+            WebElement ExpandirUnidade = driver.findElement(By.xpath("/html[1]/body[1]/form[1]/div[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/table[1]/tbody[1]/tr[3]/td[2]/div[1]/select[1]"));
+            ExpandirUnidade.click();
+            Select select = new Select(UnidadeDropdown);
+            select.selectByValue("880");
+            CampoRamal.click();
+            //WebElement Funcionando = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//input[@id='campoDyn_3702'])[1]")));
+            //Funcionando.click();
+            Thread.sleep(2000);
 
         } else if (padrao == 2) {
 
@@ -552,7 +511,7 @@ Funcionando(s/n)= campoDyn_3524
 
 
 
-            driver.switchTo().parentFrame();
+        driver.switchTo().parentFrame();
 
         WebElement Gravar = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='btnGravar']")));
 
@@ -573,14 +532,13 @@ Funcionando(s/n)= campoDyn_3524
         }
 
 
-            Thread.sleep(30000);
-            driver.switchTo().defaultContent();
-            entrada.close();
+        Thread.sleep(30000);
+        driver.switchTo().defaultContent();
+        entrada.close();
 
 
-            driver.quit(); // Fechar o navegador.
-        }
-    public static WebDriver getDriver(){
-        return driver;
+        driver.quit(); // Fechar o navegador.
     }
-    }
+
+
+}

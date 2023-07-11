@@ -32,7 +32,7 @@ class LoginGUI extends JFrame {
         panel.add(passwordField);
         panel.add(new JLabel()); // Placeholder for empty cell
         panel.add(loginButton);
-
+        System.out.println();
         loginButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
